@@ -3,7 +3,7 @@ import socket
 from datetime import datetime
 import platform
 
-app = Flask(__name__)
+app = Flask(__name__
 
 @app.route("/")
 def home():
