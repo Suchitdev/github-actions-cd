@@ -1,0 +1,11 @@
+services:
+  github-actions-cd:
+
+    build: .
+
+    container_name: github-actions-cd
+
+    ports:
+      - "5000:5000"
+
+    restart: unless-stopped

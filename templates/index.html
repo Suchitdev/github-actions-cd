@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>GitHub Actions CD</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚀 GitHub Actions Continuous Deployment</h1>
+
+        <p class="subtitle">
+            Automatically deployed from GitHub Actions to AWS EC2 using Docker.
+        </p>
+
+        <div class="grid">
+
+            <div class="card">
+                <h2>Deployment Status</h2>
+                <p class="live">🟢 {{ status }}</p>
+            </div>
+
+            <div class="card">
+                <h2>Environment</h2>
+                <p>{{ environment }}</p>
+            </div>
+
+            <div class="card">
+                <h2>Application Version</h2>
+                <p>{{ version }}</p>
+            </div>
+
+            <div class="card">
+                <h2>Hostname</h2>
+                <p>{{ hostname }}</p>
+            </div>
+
+            <div class="card">
+                <h2>Operating System</h2>
+                <p>{{ os_name }}</p>
+            </div>
+
+            <div class="card">
+                <h2>Python Version</h2>
+                <p>{{ python_version }}</p>
+            </div>
+
+            <div class="card full">
+                <h2>Deployment Time</h2>
+                <p>{{ current_time }}</p>
+            </div>
+
+        </div>
+
+        <footer>
+
+            <p>
+                🐳 Docker |
+                ⚡ GitHub Actions |
+                ☁ AWS EC2 |
+                📦 Docker Compose
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
