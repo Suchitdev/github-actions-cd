@@ -13,7 +13,7 @@ def home():
         current_time=datetime.now().strftime("%d %B %Y | %I:%M:%S %p"),
         os_name=platform.system(),
         python_version=platform.python_version(),
-        version="v1.0.1",
+        version="v1.1.0",
         environment="Production",
         status="LIVE"
     )
